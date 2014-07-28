@@ -5,7 +5,7 @@ CFLAGS = -c $(DEBUG)
 LFLAGS = $(DEBUG)
 
 assign2 : $(OBJS)
-	$(CC) $(LFLAGS) $(OBJS) -pthread -o hw3
+	$(CC) $(LFLAGS) $(OBJS) -pthread -o program
 	
 Source.o : Source.cpp
 	$(CC) $(CFLAGS) Source.cpp
@@ -20,4 +20,4 @@ Literal.o : Literal.h Literal.cpp
 	$(CC) $(CFLAGS) Literal.cpp
 
 clean:
-	\rm *.o hw3
+	\rm *.o program
